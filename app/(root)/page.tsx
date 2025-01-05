@@ -4,7 +4,7 @@ import { useState, useEffect, useContext } from 'react';
 import ProductList from "@/components/shared/product/product-list";
 import { getLatestProducts } from "@/lib/actions/product-actions";
 import { SearchContext } from "@/app/(root)/layout";
-import { Product, Products } from '@/types';
+import { Products } from '@/types';
 
 const HomePage = () => {
   const [latestProducts, setLatestProducts] = useState<Products[]>([]);
